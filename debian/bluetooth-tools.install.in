@@ -1,0 +1,2 @@
+@PREFIX@/etc/bluetooth/*
+/etc/rc.d/*

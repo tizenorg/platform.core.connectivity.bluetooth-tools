@@ -1,0 +1,13 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
+
+# install script files
+INSTALL(PROGRAMS ${CMAKE_CURRENT_SOURCE_DIR}/bt-stack-up.sh DESTINATION etc/bluetooth)
+INSTALL(PROGRAMS ${CMAKE_CURRENT_SOURCE_DIR}/bt-stack-down.sh DESTINATION etc/bluetooth)
+INSTALL(PROGRAMS ${CMAKE_CURRENT_SOURCE_DIR}/bt-reset-env.sh DESTINATION etc/bluetooth)
+INSTALL(PROGRAMS ${CMAKE_CURRENT_SOURCE_DIR}/bt-edutm-on.sh DESTINATION etc/bluetooth)
+INSTALL(PROGRAMS ${CMAKE_CURRENT_SOURCE_DIR}/bt-edutm-dev-up.sh DESTINATION etc/bluetooth)
+INSTALL(PROGRAMS ${CMAKE_CURRENT_SOURCE_DIR}/bt-edutm-mode-on.sh DESTINATION etc/bluetooth)
+INSTALL(PROGRAMS ${CMAKE_CURRENT_SOURCE_DIR}/bt-edutm-off.sh DESTINATION etc/bluetooth)
+
+# install booting script
+INSTALL(PROGRAMS ${CMAKE_CURRENT_SOURCE_DIR}/bluetooth-address DESTINATION /etc/rc.d/init.d)

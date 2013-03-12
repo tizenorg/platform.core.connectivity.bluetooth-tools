@@ -1,0 +1,95 @@
+bluetooth-tools (0.2.35) precise; urgency=low
+
+  * Synchronize the code with Private git
+  * Git: adaptation/devices/bluetooth-tools
+  * Tag: bluetooth-tools_0.2.35
+
+ -- Jaekyun Lee <jkyun.lee@samsung.com>  Fri, 07 Dec 2012 14:42:28 +0900
+
+bluetooth-tools (0.2.32) unstable; urgency=low
+
+  * Upload the package
+  * Git: slp/pkgs/b/bluetooth-tools
+  * Tag: bluetooth-tools_0.2.32
+
+ -- DoHyun Pyun <dh79.pyun@samsung.com>  Fri, 05 Oct 2012 15:04:50 +0900
+
+bluetooth-tools (0.2.31) unstable; urgency=low
+
+  * Upload the package
+  * Git: slp/pkgs/b/bluetooth-tools
+  * Tag: bluetooth-tools_0.2.31
+
+ -- DoHyun Pyun <dh79.pyun@samsung.com>  Wed, 26 Sep 2012 13:31:06 +0900
+
+bluetooth-tools (0.2.30) unstable; urgency=low
+
+  * Change SMACK domain name
+  * Git: slp/pkgs/b/bluetooth-tools
+  * Tag: bluetooth-tools_0.2.30
+
+ -- DoHyun Pyun <dh79.pyun@samsung.com>  Wed, 26 Sep 2012 08:45:53 +0900
+
+bluetooth-tools (0.2.29) unstable; urgency=low
+
+  * Change SMACK domain name
+  * Git: slp/pkgs/b/bluetooth-tools
+  * Tag: bluetooth-tools_0.2.29
+
+ -- Sangki Park <sangki79.park@samsung.com>  Tue, 25 Sep 2012 10:35:52 +0900
+
+bluetooth-tools (0.2.28) unstable; urgency=low
+
+  * Upload the package
+  * Git: slp/pkgs/b/bluetooth-tools
+  * Tag: bluetooth-tools_0.2.28
+
+ -- Sangki Park <sangki79.park@samsung.com>  Fri, 21 Sep 2012 09:06:54 +0900
+
+bluetooth-tools (0.2.27) natty; urgency=low
+
+  * Upload the package
+  * Git: slp/pkgs/b/bluetooth-tools
+  * Tag: bluetooth-tools_0.2.27
+
+ -- DoHyun Pyun <dh79.pyun@samsung.com>  Mon, 17 Sep 2012 10:56:45 +0900
+
+bluetooth-tools (0.2.26) unstable; urgency=low
+
+  * Upload the package
+  * Git: slp/pkgs/b/bluetooth-tools
+  * Tag: bluetooth-tools_0.2.26
+
+ -- Divya yadav <divya.yadav@samsung.com>  Tue, 07 Aug 2012 12:48:23 +0530
+
+bluetooth-tools (0.2.25) unstable; urgency=low
+
+  * Upload the package
+  * Git: slp/pkgs/b/bluetooth-tools
+  * Tag: bluetooth-tools_0.2.25
+
+ -- DoHyun Pyun <dh79.pyun@samsung.com>  Wed, 23 May 2012 12:15:46 +0900
+
+bluetooth-tools (0.2.24) unstable; urgency=low
+
+  * Remove the code to launch the Obexd
+  * Git: slp/pkgs/b/bluetooth-tools
+  * Tag: bluetooth-tools_0.2.24
+
+ -- DoHyun Pyun <dh79.pyun@samsung.com>  Fri, 11 May 2012 09:42:39 +0900
+
+bluetooth-tools (0.2.23) unstable; urgency=low
+
+  * Changhe the basic FTP root folder
+  * Git: slp/pkgs/b/bluetooth-tools
+  * Tag: bluetooth-tools_0.2.23
+
+ -- DoHyun Pyun <dh79.pyun@samsung.com>  Tue, 08 May 2012 08:53:47 +0900
+
+bluetooth-tools (0.2.22) unstable; urgency=low
+
+  * split from bluetooth-dev-tools
+  * Git: slp/pkgs/b/bluetooth-tools
+  * Tag: bluetooth-tools_0.2.22
+
+ -- Jkyun Lee <jkyun.lee@samsung.com>  Mon, 05 Mar 2012 13:48:49 +0900

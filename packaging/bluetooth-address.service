@@ -1,0 +1,15 @@
+# this Unit set Bluetooth Address, some application use the address although bluetooth doesn't turn on.
+# especially, OSP API use it as such way.
+#
+
+[Unit]
+Description=Generate Bluetooth Address
+
+[Service]
+Type=oneshot
+ExecStart=/usr/etc/bluetooth/bt-set-addr.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=bluetooth.target
+
