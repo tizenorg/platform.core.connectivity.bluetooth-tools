@@ -1,7 +1,7 @@
 Name:       bluetooth-tools
 Summary:    bluetooth-tools
 Version:    0.2.35
-Release:    2
+Release:    3
 Group:      TO_BE/FILLED_IN
 License:    Apache License, Version 2.0
 Source0:    %{name}-%{version}.tar.gz
@@ -16,6 +16,9 @@ Tools fo bluetooth run/stop and set address
 %setup -q
 
 %build
+export CFLAGS+=" -fpie -fvisibility=hidden"
+export LDFLAGS+=" -Wl,--rpath=/usr/lib -Wl,--as-needed -Wl,--unresolved-symbols=ignore-in-shared-libs -pie"
+
 cmake . -DCMAKE_INSTALL_PREFIX=%{_prefix}
 make %{?jobs:-j%jobs}
 
