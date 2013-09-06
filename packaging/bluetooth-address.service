@@ -4,6 +4,7 @@
 
 [Unit]
 Description=Generate Bluetooth Address
+ConditionPathExists=/usr/etc/bluetooth/bt-set-addr.sh
 
 [Service]
 Type=oneshot
