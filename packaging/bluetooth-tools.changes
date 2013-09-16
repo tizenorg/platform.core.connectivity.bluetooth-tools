@@ -1,0 +1,7 @@
+* Mon Sep 16 2013 Victor Hakoun <victor.hakoun@eurogiciel.fr> submit/tizen/20130909.103211@05c05b6
+- Add no-firmware subpackage.
+- Fix TIVI-1723 bt-set-addr.sh is not part of the package and not recommended to specifically set bluetooth address for IVI. If the condition fails starting of the unit will be skipped.
+- Merge branch 'master' into tizen_2.1
+- Tizen 2.1 base
+- Initial empty repository
+
