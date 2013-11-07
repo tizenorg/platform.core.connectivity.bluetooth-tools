@@ -7,7 +7,7 @@
 # Register BT Device
 /usr/etc/bluetooth/bt-dev-start.sh
 
-if !(/usr/sbin/hciconfig | grep hci); then
+if !(/usr/bin/hciconfig | grep hci); then
 	echo "Registering BT device is failed."
 	exit 1
 fi
@@ -23,7 +23,7 @@ if [ -d /sys/fs/cgroup/systemd ]; then
 else
    # Under systemd, bluetoothd is dbus activated. sysvinit requires it to be
    # launched explicitly
-   /usr/sbin/bluetoothd -d
+   /lib/bluetooth/bluetoothd -d
 fi
 
 /usr/bin/bt-service &
