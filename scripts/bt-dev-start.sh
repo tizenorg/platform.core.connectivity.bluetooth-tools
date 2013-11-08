@@ -5,6 +5,10 @@ BT_PLATFORM_DEFAULT_HCI_NAME="Tizen"
 
 # Trun-on Bluetooth Chip
 
+if !(/sbin/lsmod | grep btusb); then
+	/sbin/modprobe btusb
+fi
+
 /usr/sbin/rfkill unblock bluetooth
 
 echo "Check for Bluetooth device status"
