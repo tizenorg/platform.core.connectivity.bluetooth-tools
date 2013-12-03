@@ -23,7 +23,7 @@ if [ -d /sys/fs/cgroup/systemd ]; then
 else
    # Under systemd, bluetoothd is dbus activated. sysvinit requires it to be
    # launched explicitly
-   /lib/bluetooth/bluetoothd -d
+   /lib/bluetooth/bluetoothd -E
 fi
 
 /usr/bin/bt-service &
