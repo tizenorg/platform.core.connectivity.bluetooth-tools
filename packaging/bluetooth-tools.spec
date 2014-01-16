@@ -7,7 +7,8 @@ License:    Apache-2.0
 Source0:    %{name}-%{version}.tar.gz
 Source1001:	bluetooth-address.service
 BuildRequires:  cmake
-Requires : bluetooth-tools-no-firmware
+Requires:       bluetooth-tools-no-firmware
+Requires:       bluetooth-share
 
 %description
 Tools fo bluetooth run/stop and set address
