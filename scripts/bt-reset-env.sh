@@ -6,7 +6,8 @@
 killall -9 hciattach
 
 # Remove BT files and setting
-rm -rf /opt/data/bluetooth/.bt_paired
+eval $(tzplatform-get TZ_SYS_DATA)
+rm -rf $TZ_SYS_DATA/bluetooth/.bt_paired
 rm -rf /var/lib/bluetooth/*
 
 # Initialize BT vconf values

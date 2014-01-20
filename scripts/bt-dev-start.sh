@@ -3,7 +3,7 @@
 # Script for registering BT device
 BT_PLATFORM_DEFAULT_HCI_NAME="Tizen"
 
-# Trun-on Bluetooth Chip
+# Turn-on Bluetooth Chip
 
 /usr/sbin/rfkill unblock bluetooth
 
