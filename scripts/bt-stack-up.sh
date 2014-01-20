@@ -8,7 +8,7 @@
 /usr/etc/bluetooth/bt-dev-start.sh
 
 if !(/usr/bin/hciconfig | grep hci); then
-	echo "Registering BT device is failed."
+	echo "Registering BT device failed."
 	exit 1
 fi
 
@@ -17,9 +17,9 @@ echo "Run bluetoothd"
 
 # We have to handle both systemd and sysvinit cases differently
 if [ -d /sys/fs/cgroup/systemd ]; then
-   # bt-service changes USER to 'app' via libprivilege-control, so it needs
+   # bt-service changes USER via libprivilege-control, so it needs
    # to know where the session bus is located under systemd
-   export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/5000/dbus/user_bus_socket
+   export DBUS_SESSION_BUS_ADDRESS=unix:path=$XDG_RUNTIME_DIR/dbus/user_bus_socket
 else
    # Under systemd, bluetoothd is dbus activated. sysvinit requires it to be
    # launched explicitly
