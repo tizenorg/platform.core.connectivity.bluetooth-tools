@@ -10,7 +10,6 @@
 # Kill BlueZ bluetooth stack
 killall bluetooth
 killall obexd obex-client
-killall bt-syspopup
 killall bluetooth-share
 killall bluetooth-pb-agent
 killall bluetooth-map-agent
