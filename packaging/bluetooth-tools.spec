@@ -28,11 +28,11 @@ On/Off bluetooth device
 %setup -q
 
 %build
-export CFLAGS+=" -fpie -fvisibility=hidden"
-export LDFLAGS+=" -Wl,--rpath=/usr/lib -Wl,--as-needed -Wl,--unresolved-symbols=ignore-in-shared-libs -pie"
+export CFLAGS="${CFLAGS} -fpie -fvisibility=hidden"
+export LDFLAGS="${LDFLAGS} -Wl,--rpath=/usr/lib -Wl,--as-needed -Wl,--unresolved-symbols=ignore-in-shared-libs -pie"
 
 %cmake . -DCMAKE_INSTALL_PREFIX=%{_prefix}
-make %{?jobs:-j%jobs}
+%__make %{?_smp_mflags}
 
 %install
 rm -rf %{buildroot}
