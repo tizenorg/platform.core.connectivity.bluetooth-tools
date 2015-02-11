@@ -5,7 +5,7 @@
 #
 
 # Kill BlueZ bluetooth stack
-killall bluetoothd
+/usr/bin/killall bluetoothd
 
 # Remove BT device
 /usr/etc/bluetooth/bt-dev-end.sh
