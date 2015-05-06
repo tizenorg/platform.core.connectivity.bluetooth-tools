@@ -33,20 +33,24 @@ export LDFLAGS+=" -Wl,--rpath=/usr/lib -Wl,--as-needed -Wl,--unresolved-symbols=
 
 %if "%{profile}" == "mobile"
 export CFLAGS="$CFLAGS -DTIZEN_MOBILE"
-%elseif "%{profile}" == "wearable"
+%else
+%if "%{profile}" == "wearable"
 export CFLAGS="$CFLAGS -DTIZEN_WEARABLE"
+%endif
 %endif
 
 %cmake \
 %if "%{profile}" == "mobile"
 	-DTIZEN_MOBILE=YES \
 	-DTIZEN_WEARABLE=NO \
-%elseif "%{profile}" == "wearable"
+%else
+%if "%{profile}" == "wearable"
 	-DTIZEN_MOBILE=NO \
         -DTIZEN_WEARABLE=YES \
 %else
         -DTIZEN_MOBILE=NO \
         -DTIZEN_WEARABLE=NO \
+%endif
 %endif
 
 %cmake . -DCMAKE_INSTALL_PREFIX=%{_prefix}
@@ -75,7 +79,11 @@ install -D -m 0644 LICENSE.APLv2 %{buildroot}%{_datadir}/license/bluetooth-tools
 %files
 %manifest %{name}.manifest
 %defattr(-,root,root,-)
+%if "%{profile}" == "mobile"
+%exclude %{_sysconfdir}/rc.d/init.d/bluetooth-address
+%else
 %{_sysconfdir}/rc.d/init.d/bluetooth-address
+%endif
 %{_sysconfdir}/rc.d/rc3.d/S60bluetooth-address
 %{_sysconfdir}/rc.d/rc5.d/S60bluetooth-address
 %attr(0755,-,-) %{_prefix}/etc/bluetooth/bt-stack-up.sh
