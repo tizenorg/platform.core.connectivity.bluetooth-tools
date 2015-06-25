@@ -10,6 +10,7 @@ rm -rf /opt/data/bluetooth/.bt_paired
 rm -rf /var/lib/bluetooth/*
 
 # Initialize BT vconf values
+vconftool set -f -t  int db/bluetooth/lestatus "0" -g 6520
 vconftool set -f -t int db/bluetooth/status "0" -g 6520
 vconftool set -f -t int file/private/bt-service/flight_mode_deactivated "0" -g 6520
 vconftool set -f -t string memory/bluetooth/sco_headset_name "" -g 6520 -i
