@@ -81,7 +81,7 @@ install -D -m 0644 LICENSE.APLv2 %{buildroot}%{_datadir}/license/bluetooth-tools
 %files
 %manifest %{name}.manifest
 %defattr(-,root,root,-)
-%if "%{profile}" == "mobile"
+%if "%{profile}" == "mobile" || "%{profile}" == "wearable"
 %exclude %{_sysconfdir}/rc.d/init.d/bluetooth-address
 %else
 %{_sysconfdir}/rc.d/init.d/bluetooth-address
