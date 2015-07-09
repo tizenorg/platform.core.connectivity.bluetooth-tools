@@ -42,7 +42,7 @@ fi
 
 # Execute BlueZ BT stack
 echo "Run bluetoothd"
-/usr/lib/bluetooth/bluetoothd -d -C &
+/usr/libexec/bluetooth/bluetoothd -d -C &
 /usr/bin/dbus-send --print-reply --system --type=method_call \
 		--dest=org.freedesktop.systemd1 /org/freedesktop/systemd1 \
 		org.freedesktop.systemd1.Manager.StartUnit \
