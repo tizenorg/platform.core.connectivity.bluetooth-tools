@@ -13,6 +13,7 @@ killall bt-syspopup
 killall bluetooth-pb-agent
 killall bluetooth-map-agent
 killall bluetooth-hfp-agent
+killall bluetooth-ag-agent
 killall bluetoothd
 
 # result
