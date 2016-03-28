@@ -15,6 +15,7 @@ killall bluetooth-map-agent
 killall bluetooth-hfp-agent
 killall bluetooth-ag-agent
 killall bluetoothd
+killall bluetooth-share
 
 # result
 exit 0
