@@ -9,9 +9,7 @@ Source1001: bluetooth-address.service
 BuildRequires:  cmake
 Suggests:       bluetooth-share
 Requires:       tizen-platform-config-tools
-%if "%{profile}" != "mobile"
-Requires :      bluetooth-tools-no-firmware
-%endif
+Requires:      bluetooth-scripts
 
 %description
 Tools fo bluetooth run/stop and set address
@@ -21,6 +19,7 @@ Summary:    On/Off Bluetooth adapter
 Group:      Network & Connectivity/Bluetooth
 Requires:   %{name} = %{version}-%{release}
 Requires:   rfkill
+Provides:   bluetooth-scripts
 Conflicts:  bluetooth-firmware-bcm
 
 %description no-firmware
