@@ -1,4 +1,5 @@
 #!/bin/sh
+PATH=/bin:/usr/bin:/sbin:/usr/sbin
 
 # BT Stack and device stop
 /usr/etc/bluetooth/bt-stack-down.sh

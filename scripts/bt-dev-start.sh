@@ -1,4 +1,5 @@
 #!/bin/sh
+PATH=/bin:/usr/bin:/sbin:/usr/sbin
 
 # Script for registering BT device
 BT_PLATFORM_DEFAULT_HCI_NAME="Tizen"

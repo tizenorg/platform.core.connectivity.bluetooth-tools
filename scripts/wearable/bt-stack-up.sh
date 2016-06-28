@@ -1,4 +1,5 @@
 #!/bin/sh
+PATH=/bin:/usr/bin:/sbin:/usr/sbin
 
 HCIDUMP_DIR="/opt/usr/media/.bluetooth"
 HCIDUMP_FILENAME="bt_hcidump.log"

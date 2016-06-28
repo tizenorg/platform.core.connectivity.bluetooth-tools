@@ -1,4 +1,5 @@
 #!/bin/sh
+PATH=/bin:/usr/bin:/sbin:/usr/sbin
 
 HCIDUMP_BASEDIR="/opt/usr/media/Others"
 HCIDUMP_DIR="${HCIDUMP_BASEDIR}/.bt_dump"
