@@ -22,6 +22,8 @@ fi
 # Execute BlueZ BT stack
 echo "Run bluetoothd"
 /usr/libexec/bluetooth/bluetoothd -d -C &
-/usr/bin/bluetooth-share &
+
+echo "Run bluetooth-share by systemd"
+systemctl start --no-block bluetooth-share.service
 
 exit 0
